@@ -17,6 +17,5 @@ Hi, I'm Manos, an Electrical and Computer Engineering 🔌 graduate (2022) from 
 
 I am deeply interested in music and digital signal processing, with a strong focus on implementing deep learning solutions to address complex challenges in these fields. I am always open to exploring innovative ideas and collaborating on exciting projects.🍋
 
-
 ___
-*<u>Keywords:</u>* *Music Information Retrieval*, *Deep Learning*, *Digital Signal Processing*, *Music Technology*
+*<u>Keywords:</u>* *Music Information Retrieval*, *Deep Learning*, *Digital Signal Processing*
