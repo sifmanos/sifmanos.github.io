@@ -13,7 +13,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am currently pursuing an MSc in Computer Science 🎓 at the University of Crete. My thesis focuses on applying Generative Models in Deep Learning 💻 to address challenges in image super-resolution 🔍, employing advanced techniques such as Diffusion and Latent Diffusion Models. My primary interest lies in leveraging Deep Learning to tackle challenges in Computer Vision 👀.
+I hold degree in Electrical and Computer Engineering ⚡ from the University of Patras and an MSc in Computer Science 🧑‍💻 from the University of Crete. My work specializes in Music Information Retrieval 🎶, using Deep Learning 🤖 for tasks like Music Source Separation and Automatic Music Transcription 🎼. I’m passionate about applying ML to solve challenges in music and digital signal processing 🍋.
 
 ___
-*<u>Keywords:</u>* *Generative Models*, *Deep Learning*, *Image super-resolution*, *Diffusion Models*, *Latent Diffusion Models*, *Computer Vision*
+*<u>Keywords:</u>* *Music Information Retrieval*, *Deep Learning*, *Digital Signal Processing*
