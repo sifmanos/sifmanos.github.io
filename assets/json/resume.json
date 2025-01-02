@@ -31,8 +31,8 @@
       "name": "Computer Science Department - University of Crete",
       "position": "Graduate Research Assistant",
       "url": "",
-      "startDate": "01-09-2023",
-      "endDate": "01-09-2024",
+      "startDate": "2023-09-01",
+      "endDate": "2024-09-01",
       "summary": "Deep Learning Approaches for Source Separation and Transcription of Cretan Dance Tunes",
       "highlights": []
     },
@@ -40,8 +40,8 @@
       "name": "Electrical and Computer Engineering Department - University of Patras",
       "position": "Research and Development Software Engineer",
       "url": "http://audiogroup.ece.upatras.gr/",
-      "startDate": "01-09-2019",
-      "endDate": "01-02-2021",
+      "startDate": "2019-09-01",
+      "endDate": "2021-02-01",
       "summary": "Analysis and Processing of 3D Audio using the Ambisonics technology",
       "highlights": []
     }
@@ -53,8 +53,8 @@
       "url": "https://www.csd.uoc.gr/",
       "area": "Computer Engineering",
       "studyType": "MSc",
-      "startDate": "01-09-2022",
-      "endDate": "01-09-2023",
+      "startDate": "2022-09-01",
+      "endDate": "2023-09-01",
       "score": "9.29",
       "courses": [
         "Voice Processing",
@@ -73,8 +73,8 @@
       "url": "https://www.ece.upatras.gr/index.php/en/",
       "area": "Information Tecnology",
       "studyType": "BSc",
-      "startDate": "01-09-2015",
-      "endDate": "01-04-2022",
+      "startDate": "2015-09-01",
+      "endDate": "2022-04-01",
       "score": "7.44",
       "courses": [
         "Digital Signal Processing",
@@ -117,20 +117,20 @@
     {
       "name": "Deep Learning Approaches for Source Separation and Transcription of Cretan Dance Tunes",
       "summary":"Advancing Transcription for non-Western music, specifically Cretan lyra by integrating Source Separation and Transcription systems using state-of-the-art Deep Learning techniques to improve accuracy  and address cultural and technical challenges.",
-      "startDate": "01-09-2022",
-      "endDate": "01-09-2023"
+      "startDate": "2022-09-01",
+      "endDate": "2023-09-01"
     },
     {
       "name": "Sparse Dictionary Learning - BFGS",
       "summary": "Exploration of spectral super-resolution, utilizing sparse-based machine learning and the BFGS optimization algorithm to reconstruct high-resolution multi- and hyperspectral images from limited spectral data with improved efficiency and accuracy.",
-      "startDate": "01-09-2023",
-      "endDate": "01-02-2024"
+      "startDate": "2023-09-01",
+      "endDate": "2024-02-01"
     },    
     {
       "name": "Analysis and Processing of 3D Audio using the Ambisonics technology",
       "summary": "The analysis and processing of 3D audio using Ambisonics technology is showcased, with MATLAB tools enabling binaural rendering and evaluations through perceptual angle estimation and acoustic experiments.",
-      "startDate": "01-09-2015",
-      "endDate": "01-04-2022"
+      "startDate": "2015-09-01",
+      "endDate": "2022-04-01"
     }
   ]
 }
