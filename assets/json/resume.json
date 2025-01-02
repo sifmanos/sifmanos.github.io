@@ -1,0 +1,136 @@
+{
+  "basics": {
+    "name": "Manos Sifakis",
+    "label": "Graduate Student in Computer Engineering",
+    "image": "",
+    "email": "sifakis.em@gmail.com",
+    "url": "https://sifmanos.github.io/",
+    "Keywords": [
+      "Music Information Retrieval",
+      "Deep Learning",
+      "Generative Models",
+      "Digital Signal Processing",
+      "Music Technologies"      
+    ],
+    "location": {
+      "address": "Lappa 23, Heraklion, Crete, 71305",
+      "city": "Heraklion",
+      "countryCode": "GR",
+      "region": "Crete"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "sifmanos",
+        "url": "https://www.linkedin.com/in/sifmanos/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Computer Science Department - University of Crete",
+      "position": "Graduate Research Assistant",
+      "url": "",
+      "startDate": "01-09-2023",
+      "endDate": "01-09-2024",
+      "summary": "Deep Learning Approaches for Source Separation and Transcription of Cretan Dance Tunes",
+      "highlights": []
+    },
+    {
+      "name": "Electrical and Computer Engineering Department - University of Patras",
+      "position": "Research and Development Software Engineer",
+      "url": "http://audiogroup.ece.upatras.gr/",
+      "startDate": "01-09-2019",
+      "endDate": "01-02-2021",
+      "summary": "Analysis and Processing of 3D Audio using the Ambisonics technology",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Crete",
+      "location": "Heraklion, Greece",
+      "url": "https://www.csd.uoc.gr/",
+      "area": "Computer Engineering",
+      "studyType": "MSc",
+      "startDate": "01-09-2022",
+      "endDate": "01-09-2023",
+      "score": "9.29",
+      "courses": [
+        "Voice Processing",
+        "Introduction to Deep Generative Modeling",
+        "Neural Networks and Learning of Hierarchical Representation",
+        "Optimization Methods",
+        "Pattern Recognition"
+      ],
+      "thesis": {
+        "title": "Deep Learning Approaches for Source Separation and Transcription of Cretan Dance Tunes"
+      }
+    },
+    {
+      "institution": "University of Patras",
+      "location": "Patras, Greece",
+      "url": "https://www.ece.upatras.gr/index.php/en/",
+      "area": "Information Tecnology",
+      "studyType": "BSc",
+      "startDate": "01-09-2015",
+      "endDate": "01-04-2022",
+      "score": "7.44",
+      "courses": [
+        "Digital Signal Processing",
+        "Optimization",
+        "Signal and Systems",
+        "Digital Integrated Circuits & Sys."
+      ],
+      "thesis": {
+        "title": "Analysis and Processing of 3D Audio using the Ambisonics technology"      }
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "keywords": [
+        "Python",
+        "MATLAB",
+        "HTML/CSS"
+      ]
+    },
+    {
+      "name": "Technologies",
+      "keywords": [
+        "PyTorch",
+        "Latex"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Greek",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "C2 - The University of Michigan"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Deep Learning Approaches for Source Separation and Transcription of Cretan Dance Tunes",
+      "summary":"Advancing Transcription for non-Western music, specifically Cretan lyra by integrating Source Separation and Transcription systems using state-of-the-art Deep Learning techniques to improve accuracy  and address cultural and technical challenges.",
+      "startDate": "01-09-2022",
+      "endDate": "01-09-2023"
+    },
+    {
+      "name": "Sparse Dictionary Learning - BFGS",
+      "summary": "Exploration of spectral super-resolution, utilizing sparse-based machine learning and the BFGS optimization algorithm to reconstruct high-resolution multi- and hyperspectral images from limited spectral data with improved efficiency and accuracy.",
+      "startDate": "01-09-2023",
+      "endDate": "01-02-2024"
+    },    
+    {
+      "name": "Analysis and Processing of 3D Audio using the Ambisonics technology",
+      "summary": "The analysis and processing of 3D audio using Ambisonics technology is showcased, with MATLAB tools enabling binaural rendering and evaluations through perceptual angle estimation and acoustic experiments.",
+      "startDate": "01-09-2015",
+      "endDate": "01-04-2022"
+    }
+  ]
+}
