@@ -1,0 +1,8 @@
+github_users:
+  - sifmanos
+
+repo_description_lines_max: 3
+
+github_repos:
+  - sifmanos/Lyra-MSS-AMT
+  - stperrakis/Sparse_Dictionary_Learning_BFGS
