@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-**Currently, I am serving in the Greek Army. 🪖**
+I am currently serving in the **Greek Army** 🪖.
