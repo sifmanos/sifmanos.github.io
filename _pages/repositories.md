@@ -16,11 +16,11 @@ nav_order: 4
   {% endfor %}
 </div>
 
+---
 
-
+{% endif %}
 
 {% if site.data.repositories.github_repos %}
-
 
 ## GitHub Repositories
 
@@ -30,4 +30,3 @@ nav_order: 4
   {% endfor %}
 </div>
 {% endif %}
-
