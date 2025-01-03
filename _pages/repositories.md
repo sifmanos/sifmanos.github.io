@@ -6,6 +6,19 @@ nav: true
 nav_order: 4
 ---
 
+{% if site.data.repositories.github_repos %}
+
+## GitHub Repositories
+
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {% for repo in site.data.repositories.github_repos %}
+    {% include repository/repo.liquid repository=repo %}
+  {% endfor %}
+</div>
+{% endif %}
+
+---
+
 {% if site.data.repositories.github_users %}
 
 ## GitHub Stats
@@ -20,13 +33,22 @@ nav_order: 4
 
 {% endif %}
 
-{% if site.data.repositories.github_repos %}
 
-## GitHub Repositories
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const images = document.querySelectorAll(".repo-img");
 
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for repo in site.data.repositories.github_repos %}
-    {% include repository/repo.liquid repository=repo %}
-  {% endfor %}
-</div>
-{% endif %}
+    images.forEach((img) => {
+      const darkSrc = img.getAttribute("data-dark");
+      const lightSrc = img.getAttribute("src");
+
+      img.setAttribute("src", isDarkMode ? darkSrc : lightSrc);
+
+      window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
+        img.setAttribute("src", e.matches ? darkSrc : lightSrc);
+      });
+    });
+  });
+</script>
+
