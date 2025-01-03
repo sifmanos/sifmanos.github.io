@@ -35,22 +35,21 @@ nav_order: 4
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const images = document.querySelectorAll(".repo-img");
+    function updateImageTheme() {
+      const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const images = document.querySelectorAll(".repo-img");
 
-    function updateImageTheme(img) {
-      const darkSrc = img.getAttribute("data-dark");
-      const lightSrc = img.getAttribute("data-light");
-      img.setAttribute("src", isDarkMode ? darkSrc : lightSrc);
+      images.forEach((img) => {
+        const darkSrc = img.getAttribute("data-dark");
+        const lightSrc = img.getAttribute("data-light");
+        img.setAttribute("src", isDarkMode ? darkSrc : lightSrc);
+      });
     }
 
-    images.forEach((img) => updateImageTheme(img));
+    // Initial theme update
+    updateImageTheme();
 
-    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
-      images.forEach((img) => {
-        isDarkMode = e.matches;
-        updateImageTheme(img);
-      });
-    });
+    // Listen for theme changes
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", updateImageTheme);
   });
 </script>
