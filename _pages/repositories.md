@@ -35,29 +35,26 @@ nav_order: 4
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    function getInitialTheme() {
-      const userPref = localStorage.getItem("theme");
-      const systemPref = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-      return userPref || systemPref || "dark"; // Default to dark
-    }
+    // Function to update the theme for widgets
+    function updateImageTheme() {
+      const isDarkMode = document.body.getAttribute("data-theme") === "dark" || 
+                         (!document.body.getAttribute("data-theme") && window.matchMedia("(prefers-color-scheme: dark)").matches);
 
-    function updateTheme(theme) {
       const images = document.querySelectorAll(".repo-img");
       images.forEach((img) => {
         const darkSrc = img.getAttribute("data-dark");
         const lightSrc = img.getAttribute("data-light");
-        img.setAttribute("src", theme === "dark" ? darkSrc : lightSrc);
+        img.setAttribute("src", isDarkMode ? darkSrc : lightSrc);
       });
-
-      document.body.setAttribute("data-theme", theme);
-      localStorage.setItem("theme", theme);
     }
 
-    const initialTheme = getInitialTheme();
-    updateTheme(initialTheme);
+    // Initialize theme on page load
+    updateImageTheme();
 
-    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
-      updateTheme(e.matches ? "dark" : "light");
-    });
+    // Detect system theme change
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", updateImageTheme);
+
+    // Add a custom event listener for theme toggling
+    document.addEventListener("theme-change", updateImageTheme);
   });
 </script>
