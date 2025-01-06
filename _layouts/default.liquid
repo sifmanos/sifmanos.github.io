@@ -20,6 +20,11 @@
     <!-- Header -->
     {% include header.liquid %}
 
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle">
+      <button id="light-toggle" aria-label="Toggle Theme">Toggle Theme</button>
+    </div>
+
     <!-- Content -->
     <div class="container mt-5" role="main">
       {% if page.toc and page.toc.sidebar %}
