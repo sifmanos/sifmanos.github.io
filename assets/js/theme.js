@@ -3,21 +3,21 @@
 // Toggle between light and dark themes only.
 let toggleThemeSetting = () => {
   let themeSetting = determineThemeSetting();
-  if (themeSetting == "light") {
+  if (themeSetting === "light") {
     setThemeSetting("dark");
   } else {
     setThemeSetting("light");
   }
 };
 
-// Change the theme setting and apply the theme.
+// Change the theme setting and apply the theme globally.
 let setThemeSetting = (themeSetting) => {
   localStorage.setItem("theme", themeSetting);
   document.documentElement.setAttribute("data-theme-setting", themeSetting);
   applyTheme();
 };
 
-// Apply the computed dark or light theme to the website.
+// Apply the dark or light theme to the website.
 let applyTheme = () => {
   let theme = determineThemeSetting();
 
@@ -47,7 +47,7 @@ let applyTheme = () => {
   // Add class to tables.
   let tables = document.getElementsByTagName("table");
   for (let i = 0; i < tables.length; i++) {
-    if (theme == "dark") {
+    if (theme === "dark") {
       tables[i].classList.add("table-dark");
     } else {
       tables[i].classList.remove("table-dark");
@@ -58,7 +58,7 @@ let applyTheme = () => {
   let jupyterNotebooks = document.getElementsByClassName("jupyter-notebook-iframe-container");
   for (let i = 0; i < jupyterNotebooks.length; i++) {
     let bodyElement = jupyterNotebooks[i].getElementsByTagName("iframe")[0].contentWindow.document.body;
-    if (theme == "dark") {
+    if (theme === "dark") {
       bodyElement.setAttribute("data-jp-theme-light", "false");
       bodyElement.setAttribute("data-jp-theme-name", "JupyterLab Dark");
     } else {
@@ -74,26 +74,31 @@ let applyTheme = () => {
   }
 };
 
-// Get the current theme setting from localStorage.
+// Get the current theme setting from localStorage or default to "dark".
 let determineThemeSetting = () => {
   let themeSetting = localStorage.getItem("theme");
-  if (themeSetting != "dark" && themeSetting != "light") {
-    themeSetting = "dark"; // Default to dark theme
-  }
-  return themeSetting;
+  return themeSetting === "light" || themeSetting === "dark" ? themeSetting : "dark"; // Default to dark
 };
 
+// Initialize the theme on page load and set up event listeners.
 let initTheme = () => {
   let themeSetting = determineThemeSetting();
-
   setThemeSetting(themeSetting);
 
-  // Add event listener to the theme toggle button.
+  // Ensure theme toggle works on all tabs.
   document.addEventListener("DOMContentLoaded", function () {
     const mode_toggle = document.getElementById("light-toggle");
+    if (mode_toggle) {
+      mode_toggle.addEventListener("click", function () {
+        toggleThemeSetting();
+      });
+    }
+  });
 
-    mode_toggle.addEventListener("click", function () {
-      toggleThemeSetting();
-    });
+  // Ensure dynamic updates across all tabs.
+  window.addEventListener("storage", function (e) {
+    if (e.key === "theme") {
+      applyTheme();
+    }
   });
 };
