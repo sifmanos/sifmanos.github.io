@@ -1,6 +1,6 @@
 {% if site.footer_fixed %}
   <footer class="fixed-bottom" role="contentinfo">
-    <div class="container mt-0 text-center">
+    <div class="container mt-0">
       &copy; Copyright {{ site.time | date: '%Y' }}
       {{ site.first_name }}
       {{ site.middle_name }}
@@ -11,11 +11,6 @@
       {% if site.last_updated %}
         Last updated: {{ 'now' | date: '%B %d, %Y' }}.
       {% endif %}
-      
-      <!-- Social Icons -->
-      <div class="social-icons mt-3">
-        {% include social.liquid %}
-      </div>
     </div>
   </footer>
 {% else %}
@@ -24,7 +19,7 @@
       {% include scripts/newsletter.liquid %}
     {% endif %}
 
-    <div class="container text-center">
+    <div class="container">
       &copy; Copyright {{ site.time | date: '%Y' }}
       {{ site.first_name }}
       {{ site.middle_name }}
@@ -35,11 +30,6 @@
       {% if site.last_updated %}
         Last updated: {{ 'now' | date: '%B %d, %Y' }}.
       {% endif %}
-      
-      <!-- Social Icons -->
-      <div class="social-icons mt-3">
-        {% include social.liquid %}
-      </div>
     </div>
   </footer>
 {% endif %}
