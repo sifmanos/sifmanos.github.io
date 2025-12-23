@@ -1,8 +1,8 @@
 ---
 layout: post
-date:  2025-01-20 10:00:00-0400
+date:  2026-01-01 10:00:00-0400
 inline: true
 related_posts: false
 ---
 
-I am currently serving in the **Greek Army** 🪖.
+I am an ML Engineer seeking opportunities in industry or research. Based in Athens, Greece, with availability for remote roles.
