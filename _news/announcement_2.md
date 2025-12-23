@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I am an ML Engineer seeking opportunities in industry or research. Based in Athens, Greece, with availability for remote roles.
+I am an ML Engineer seeking opportunities in industry or research. Based in Athens, Greece, with availability for remote roles 💻.
